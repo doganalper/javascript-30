@@ -1,0 +1,49 @@
+body {
+	display: flex;
+	flex-flow: column;
+	height: 98vh;
+	padding: 0 10%;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+}
+
+.keys {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.key {
+	border: 2px solid wheat;
+	border-radius: 10px;
+	width: 50%;
+	height: auto;
+	margin: 20px;
+	padding: 20px 0;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	transition: all .07s ease;
+	align-items: center;
+	color: white;
+}
+
+.key span {
+	font-weight: 600;
+	color: yellowgreen;
+	font-size: larger;
+	text-transform: uppercase;
+}
+
+.key kbd {
+	font-size: xx-large;
+	font-weight: 900;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: red;
+  box-shadow: 0 0 1rem red;
+}
